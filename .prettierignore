@@ -1,0 +1,20 @@
+# Node modules and build directories
+node_modules/
+dist/
+build/
+
+# Config files
+vite.config.js
+babel.config.js
+webpack.config.js
+
+# Any other third-party libraries or files
+/public/
+
+# Style and image files or other binary assets
+*.css
+*.scss
+*.less
+*.png
+*.jpg
+*.gif

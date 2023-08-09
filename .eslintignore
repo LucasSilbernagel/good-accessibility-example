@@ -1,0 +1,15 @@
+# Node modules and build directories
+node_modules/
+dist/
+build/
+
+# Config files
+vite.config.js
+babel.config.js
+webpack.config.js
+
+# Any other third-party libraries or files
+/public/
+
+# If using Next.js, you might also ignore:
+.next/
