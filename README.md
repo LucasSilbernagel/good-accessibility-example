@@ -1,27 +1,51 @@
-# React + TypeScript + Vite
+# Xanadu & Pennylane - [ ] Technical Assessment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Description:
 
-Currently, two official plugins are available:
+We’re building a new app, and we need you to develop the navbar feature! Create a simple
+React app using the framework of your choice (Vite, Create React App, Gatsby, Next.js, etc).
+The app doesn’t need any content other than the navigation, but the page should be long
+enough to scroll. You can add some lorem ipsum text as a placeholder. Only one page is
+necessary, the navigation links don’t need to go anywhere.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+As long as the below requirements are met, the design is up to you! Your design skills are not
+being evaluated.
 
-## Expanding the ESLint configuration
+Once completed, please send us a link to the GitHub repository for the project, along with a live
+link. You can deploy the project wherever you like: GitHub Pages, Netlify, Vercel, AWS, etc.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Acceptance Criteria:
 
-- Configure the top-level `parserOptions` property like this:
+-   [ ] The navbar is built with React (bonus points for using TypeScript as well)
+-   [ ] We use Tailwind CSS to style our projects, but you can use whichever styling system
+        you like.
+-   [ ] The navbar includes a logo/image of your choosing.
+-   [ ] The navbar includes 4 text links:
+    -   [ ] Products
+    -   [ ] About
+    -   [ ] Blog
+    -   [ ] Press
+-   [ ] The navbar includes 3 social links. These should be icons only (Font Awesome,
+        Boxicons, etc).
+    -   [ ] GitHub
+    -   [ ] LinkedIn
+    -   [ ] Twitter
+-   [ ] The navbar should be responsive, usable on screens as small as 320px wide.
+-   [ ] The navbar should be displayed at the top of the page, with no space between the
+        navbar and the top or sides of the screen.
+-   [ ] When scrolling down on the page, the navbar should be hidden above the fold. When
+        scrolling up, the navbar should slide down and be sticky at the top of the screen.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## My Submission:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Live Preview:
+
+-   currently unavailable
+
+### Tech Stack:
+
+-   React/Vite
+-   TypeScript
+-   TailwindCSS
+-   EsLint
+-   Prettier
