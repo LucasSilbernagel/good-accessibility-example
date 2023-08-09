@@ -1,4 +1,4 @@
-# Xanadu & Pennylane - [ ] Technical Assessment
+# Xanadu & Pennylane Tech Challenge
 
 ### Description:
 
