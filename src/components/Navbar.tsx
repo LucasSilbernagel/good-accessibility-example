@@ -1,16 +1,25 @@
-/// <reference types="vite-plugin-svgr/client" />
 import { ReactComponent as Logo } from '../assets/pennylane-logo.svg';
 import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 
+/* Hooks & Components */
 import NavLink from './NavLink';
-import useScrollPosition from '../hooks/useScrollPosition';
+import useScrollTracker from '../hooks/useScrollTracker';
 
 export default function Navbar() {
   const logoSize = 25;
-  const { scrollY } = useScrollPosition();
+
+  const {
+    position: { y: scrollY },
+    direction,
+  } = useScrollTracker();
+  const isNavHidden = scrollY > 100 && direction === 'down';
 
   return (
-    <nav className="border-b border-gray-50 shadow-md h-[90px]">
+    <nav
+      className={`border-b border-gray-50 shadow-md h-[90px] sticky top-0 bg-white
+      ${isNavHidden ? 'translate-y-[-90px]' : ''} 
+        ease-in-out transition-all duration-300`}
+    >
       <div className="container mx-auto flex space justify-between py-5 h-full">
         <div className="flex items-center">
           <NavLink href="/" wrapper="div">
