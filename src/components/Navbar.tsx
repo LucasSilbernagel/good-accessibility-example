@@ -16,11 +16,11 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`border-b border-gray-50 shadow-md h-[90px] sticky top-0 bg-white
-      ${isNavHidden ? 'translate-y-[-90px]' : ''} 
-        ease-in-out transition-all duration-300`}
+      className={`sticky top-0 h-[90px] border-b border-gray-50 bg-white shadow-md
+        ${isNavHidden ? 'translate-y-[-90px]' : ''} 
+          transition-all duration-300 ease-in-out`}
     >
-      <div className="container mx-auto flex space justify-between py-5 h-full">
+      <div className="space container mx-auto flex h-full justify-between py-5">
         <div className="flex items-center">
           <NavLink href="/" wrapper="div">
             <Logo title="Pennylane" />
