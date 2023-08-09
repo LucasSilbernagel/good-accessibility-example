@@ -4,12 +4,9 @@ dist/
 build/
 
 # Config files
-vite.config.js
-babel.config.js
-webpack.config.js
+vite.config.[jt]s
+babel.config.[jt]s
+webpack.config.[jt]s
 
 # Any other third-party libraries or files
 /public/
-
-# If using Next.js, you might also ignore:
-.next/
