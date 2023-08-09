@@ -5,6 +5,7 @@ type NavLinkProps = {
   children: React.ReactNode;
   newTab?: boolean;
   wrapper?: 'li' | 'div';
+  wrapperClassName?: string;
 } & AnchorHTMLAttributes<HTMLAnchorElement>;
 
 /**
@@ -17,6 +18,7 @@ export default function NavLink({
   href,
   newTab = false,
   wrapper = 'li',
+  ...props
 }: NavLinkProps) {
   const Wrapper = wrapper;
 
@@ -27,6 +29,7 @@ export default function NavLink({
         target={newTab ? '_blank' : '_self'}
         referrerPolicy={newTab ? 'no-referrer' : 'origin'}
         rel="noreferrer"
+        {...props}
       >
         {children}
       </a>

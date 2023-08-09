@@ -3,23 +3,27 @@ import { ReactComponent as Logo } from '../assets/pennylane-logo.svg';
 import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import NavLink from './NavLink';
+import useScrollPosition from '../hooks/useScrollPosition';
 
 export default function Navbar() {
-  const logoSize = 30;
+  const logoSize = 25;
+  const { scrollY } = useScrollPosition();
 
   return (
-    <nav className="border-b border-gray-50 shadow-md">
-      <div className="container mx-auto flex space justify-between py-5">
-        <ul className="flex gap-2 md:gap-5">
-          <NavLink href="/">
+    <nav className="border-b border-gray-50 shadow-md h-[90px]">
+      <div className="container mx-auto flex space justify-between py-5 h-full">
+        <div className="flex items-center">
+          <NavLink href="/" wrapper="div">
             <Logo title="Pennylane" />
           </NavLink>
+        </div>
+        <ul className="flex items-center gap-2 md:gap-8">
           <NavLink href="#products">Products</NavLink>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#blog">Blog</NavLink>
           <NavLink href="#press">Press</NavLink>
         </ul>
-        <ul className="flex gap-2 md:gap-5">
+        <ul className="flex items-center gap-2 md:gap-5">
           <NavLink href="https://github.com/alan-emartin" newTab>
             <FaGithub size={logoSize} title="Github | Alan Martin" />
           </NavLink>
