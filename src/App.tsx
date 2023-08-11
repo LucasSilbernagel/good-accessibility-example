@@ -6,12 +6,22 @@ export default function App() {
       <Nav />
       <main>
         <header className="relative flex h-[350px] w-full items-center justify-center border-b border-gray-300">
-          <img
-            className="absolute left-0 top-0 z-10 h-full w-full object-cover object-center"
-            src="http://placekitten.com/g/1920/350"
-            alt="A cute kitten"
-            loading="lazy"
-          />
+          <picture>
+            <source
+              srcSet="http://placekitten.com/g/768/350"
+              media="(max-width: 768px)"
+            />
+            <source
+              srcSet="http://placekitten.com/g/1024/350"
+              media="(max-width: 1024px)"
+            />
+            <img
+              className="absolute left-0 top-0 z-10 h-full w-full object-cover object-center"
+              src="http://placekitten.com/g/1280/350"
+              alt="A cute kitten"
+              loading="lazy"
+            />
+          </picture>
         </header>
         <section className="container mx-auto px-4 py-8 md:px-0">
           <h1 className="text-3xl font-bold md:text-4xl">
