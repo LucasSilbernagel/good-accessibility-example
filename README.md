@@ -31,6 +31,7 @@ link. You can deploy the project wherever you like: GitHub Pages, Netlify, Verce
     -   [x] LinkedIn
     -   [x] Twitter
 -   [ ] The navbar should be responsive, usable on screens as small as 320px wide.
+-   [ ] Add a hamburger menu for mobile screens with dropdown menu for the links (Extra added by me).
 -   [x] The navbar should be displayed at the top of the page, with no space between the
         navbar and the top or sides of the screen.
 -   [x] When scrolling down on the page, the navbar should be hidden above the fold. When

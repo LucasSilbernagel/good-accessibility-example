@@ -19,7 +19,7 @@ export default function useScrollTracker() {
     const handleScroll = () => {
       const currentY = window.scrollY;
 
-      /* Determines scroll direction */
+      // Determines scroll direction
       if (currentY === lastScrollTop) {
         setDirection('stationary');
       } else if (currentY > lastScrollTop) {
@@ -28,13 +28,13 @@ export default function useScrollTracker() {
         setDirection('up');
       }
 
-      /* Stores scroll position */
+      // Stores scroll position
       setPosition({
         x: window.scrollX,
         y: currentY,
       });
 
-      // Store last scroll position
+      // Stores last scroll position
       setLastScrollTop(currentY);
     };
 
