@@ -1,3 +1,5 @@
+<img src="./src/assets/pennylane-logo.svg" alt="Pennylane">
+
 # Xanadu & Pennylane Tech Challenge
 
 ### Description:
@@ -16,37 +18,37 @@ link. You can deploy the project wherever you like: GitHub Pages, Netlify, Verce
 
 ### Acceptance Criteria:
 
--   [x] The navbar is built with React (bonus points for using TypeScript as well)
--   [x] We use Tailwind CSS to style our projects, but you can use whichever styling system
-        you like.
--   [x] The navbar includes a logo/image of your choosing.
--   [x] The navbar includes 4 text links:
-    -   [x] Products
-    -   [x] About
-    -   [x] Blog
-    -   [x] Press
--   [x] The navbar includes 3 social links. These should be icons only (Font Awesome,
-        Boxicons, etc).
-    -   [x] GitHub
-    -   [x] LinkedIn
-    -   [x] Twitter
--   [ ] The navbar should be responsive, usable on screens as small as 320px wide.
--   [ ] Add a hamburger menu for mobile screens with dropdown menu for the links (Extra added by me).
--   [x] The navbar should be displayed at the top of the page, with no space between the
-        navbar and the top or sides of the screen.
--   [x] When scrolling down on the page, the navbar should be hidden above the fold. When
-        scrolling up, the navbar should slide down and be sticky at the top of the screen.
+- The navbar is built with React (bonus points for using TypeScript as well)
+- We use Tailwind CSS to style our projects, but you can use whichever styling system
+  you like.
+- The navbar includes a logo/image of your choosing.
+- The navbar includes 4 text links:
+  - Products
+  - About
+  - Blog
+  - Press
+- The navbar includes 3 social links. These should be icons only (Font Awesome,
+  Boxicons, etc).
+  - GitHub
+  - LinkedIn
+  - Twitter
+- The navbar should be responsive, usable on screens as small as 320px wide.
+- Add a hamburger menu for mobile screens with dropdown menu for the links (Extra added by me).
+- The navbar should be displayed at the top of the page, with no space between the
+  navbar and the top or sides of the screen.
+- When scrolling down on the page, the navbar should be hidden above the fold. When
+  scrolling up, the navbar should slide down and be sticky at the top of the screen.
 
 ## My Submission:
 
 ### Live Preview:
 
--   currently unavailable
+- currently unavailable
 
 ### Tech Stack:
 
--   React/Vite
--   TypeScript
--   TailwindCSS
--   EsLint
--   Prettier
+- React/Vite
+- TypeScript
+- TailwindCSS
+- EsLint
+- Prettier
