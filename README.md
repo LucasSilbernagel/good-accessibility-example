@@ -43,12 +43,12 @@ link. You can deploy the project wherever you like: GitHub Pages, Netlify, Verce
 
 ### Live Preview:
 
-- currently unavailable
+- [Live Preview](https://xanadu-pennylane-alan-martin.netlify.app/)
 
 ### Tech Stack:
 
-- React/Vite
 - TypeScript
+- React/Vite
 - TailwindCSS
 - EsLint
 - Prettier
