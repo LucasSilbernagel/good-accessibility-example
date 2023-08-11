@@ -8,12 +8,12 @@ export default function App() {
         <header className="relative flex h-[350px] w-full items-center justify-center border-b border-gray-300">
           <picture>
             <source
-              srcSet="http://placekitten.com/g/768/350"
-              media="(max-width: 768px)"
+              srcSet="http://placekitten.com/g/640/350"
+              media="(min-width: 640px)"
             />
             <source
-              srcSet="http://placekitten.com/g/1024/350"
-              media="(max-width: 1024px)"
+              srcSet="http://placekitten.com/g/768/350"
+              media="(min-width: 768px)"
             />
             <img
               className="absolute left-0 top-0 z-10 h-full w-full object-cover object-center"
