@@ -21,11 +21,6 @@ export const navbarContent = {
   ],
   socialLinks: [
     {
-      label: 'Twitter | @alanMartinCodes',
-      url: 'https://twitter.com/alanMartinCodes',
-      icon: FaTwitter,
-    },
-    {
       label: 'Github | alan-emartin',
       url: 'https://github.com/alan-emartin',
       icon: FaGithub,
@@ -34,6 +29,11 @@ export const navbarContent = {
       label: 'Linkedin | Alan Martin - Software Engineer',
       url: 'https://www.linkedin.com/in/alan-martin-2426b461/',
       icon: FaLinkedin,
+    },
+    {
+      label: 'Twitter | @alanMartinCodes',
+      url: 'https://twitter.com/alanMartinCodes',
+      icon: FaTwitter,
     },
   ],
 };
