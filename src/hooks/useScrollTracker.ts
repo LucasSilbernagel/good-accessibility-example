@@ -15,6 +15,11 @@ export default function useScrollTracker() {
   const [lastScrollTop, setLastScrollTop] = useState(0);
   const [direction, setDirection] = useState<ScrollDirection>('stationary');
 
+  // Sets initial scroll position on mount
+  useEffect(() => {
+    setLastScrollTop(window.scrollY);
+  }, []);
+
   useEffect(() => {
     const handleScroll = () => {
       const currentY = window.scrollY;
