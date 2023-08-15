@@ -1,12 +1,17 @@
 import { useRef, useState } from 'react';
 import { ReactComponent as Logo } from '../assets/pennylane-logo.svg';
-import { navbarContent } from '../content';
 import { FaBars } from 'react-icons/fa';
+
+// Hooks & Components
+import NavLink from './NavLink';
 import useScrollTracker from '../hooks/useScrollTracker';
 import useResizeHandler from '../hooks/useResizeHandler';
 import useOnKeyPress from '../hooks/useOnKeyPress';
+
+// Utils & Data
 import { useOnClickOutside } from 'usehooks-ts';
-import NavLink from './NavLink';
+import { navbarContent } from '../content';
+import { getSlideFadeTransitionClasses } from '../styles/toggleAnimationClasses';
 
 export default function Nav() {
   // State
@@ -31,17 +36,14 @@ export default function Nav() {
   // Determine nav collapse
   const isNavCollapsed = !menuOpen && direction === 'down' && position.y > 100;
 
-  // Styles
-  const navStyles = isNavCollapsed
-    ? '-translate-y-full opacity-0'
-    : 'translate-y-0 opacity-100';
-
   return (
     <nav
       role="navigation"
       aria-label="main navigation"
       className={`sticky top-0 z-50 bg-white px-5 py-5 
-      shadow-md transition-all duration-300 md:py-10 ${navStyles}`}
+      shadow-md transition-all duration-300 md:py-10 ${getSlideFadeTransitionClasses(
+        isNavCollapsed,
+      )}`}
       ref={navRef}
     >
       <div className="container mx-auto flex h-full w-full flex-col justify-between md:flex-row md:items-center">
