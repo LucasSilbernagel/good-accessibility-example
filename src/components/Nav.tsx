@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { ReactComponent as Logo } from '../assets/pennylane-logo.svg';
 import { navbarContent } from '../content';
 import { FaBars } from 'react-icons/fa';
 import useScrollTracker from '../hooks/useScrollTracker';
 import useResizeHandler from '../hooks/useResizeHandler';
+import useOnKeyPress from '../hooks/useOnKeyPress';
+import { useOnClickOutside } from 'usehooks-ts';
 import NavLink from './NavLink';
 
 export default function Nav() {
@@ -11,12 +13,20 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const { position, direction } = useScrollTracker();
 
-  // Effects
+  // Refs
+  const navRef = useRef(null);
+
+  // Utils
+  const handleMenuClose = () => setMenuOpen(false);
+
+  // Effects & Event Handlers
   useResizeHandler(() => {
     if (window.innerWidth > 768) {
       setMenuOpen(false);
     }
   });
+  useOnClickOutside(navRef, handleMenuClose);
+  useOnKeyPress(['Escape'], handleMenuClose);
 
   // Determine nav collapse
   const isNavCollapsed = !menuOpen && direction === 'down' && position.y > 100;
@@ -32,6 +42,7 @@ export default function Nav() {
       aria-label="main navigation"
       className={`sticky top-0 z-50 bg-white px-5 py-5 
       shadow-md transition-all duration-300 md:py-10 ${navStyles}`}
+      ref={navRef}
     >
       <div className="container mx-auto flex h-full w-full flex-col justify-between md:flex-row md:items-center">
         <div className="flex items-center justify-between">
