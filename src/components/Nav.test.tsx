@@ -1,6 +1,7 @@
 import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { navbarContent } from '../content';
 import Nav from './Nav';
+import { TEST_IDS } from '../test/constants';
 
 describe('<Nav />', () => {
   beforeEach(() => {
@@ -22,6 +23,20 @@ describe('<Nav />', () => {
         expect(linkElement).toHaveAttribute('href', link.url);
         expect(navElement).toContainElement(linkElement);
       });
+    });
+  });
+
+  describe('Home link', () => {
+    it('renders correctly', () => {
+      const navElement = screen.getByRole('navigation');
+      const linkElement = screen.getByTitle('Home');
+      const logoElement = screen.getByTestId(TEST_IDS.PENNYLANE_WORDMARK_LOGO);
+
+      expect(linkElement).toBeInTheDocument();
+      expect(linkElement).toHaveAttribute('href', '/');
+      expect(navElement).toContainElement(linkElement);
+      expect(logoElement).toBeInTheDocument();
+      expect(linkElement).toContainElement(logoElement);
     });
   });
 

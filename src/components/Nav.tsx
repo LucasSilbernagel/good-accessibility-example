@@ -12,6 +12,7 @@ import useOnKeyPress from '../hooks/useOnKeyPress';
 import { useOnClickOutside } from 'usehooks-ts';
 import { navbarContent } from '../content';
 import { getSlideFadeTransitionClasses } from '../styles/toggleAnimationClasses';
+import { TEST_IDS } from '../test/constants';
 
 export default function Nav() {
   // State
@@ -49,7 +50,11 @@ export default function Nav() {
       <div className="container mx-auto flex h-full w-full flex-col justify-between md:flex-row md:items-center">
         <div className="flex items-center justify-between">
           <a href="/" aria-label="navigate to home page" title="Home">
-            <Logo aria-hidden="true" title="Pennylane Logo" />
+            <Logo
+              aria-hidden="true"
+              title="Pennylane Logo"
+              data-testid={TEST_IDS.PENNYLANE_WORDMARK_LOGO}
+            />
           </a>
           <button
             aria-label="toggle menu"
