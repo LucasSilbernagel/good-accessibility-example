@@ -12,6 +12,8 @@ export default function NavLink({
 }: NavLinkProps) {
   return (
     <a
+      // eslint-disable-next-line
+      test-id="nav-link"
       href={url}
       target={openInNewTab ? '_blank' : undefined}
       rel={openInNewTab ? 'noopener noreferrer' : undefined}
