@@ -83,8 +83,8 @@ describe('<Nav />', () => {
       const navElement = container.querySelector('nav');
       waitFor(() => {
         expect(window.scrollY).toBeGreaterThan(0);
-        expect(navElement).not.toHaveClass('-translate-y-full');
       });
+      expect(navElement).not.toHaveClass('-translate-y-full');
     });
   });
 });
