@@ -80,6 +80,7 @@ export default function Nav() {
             {navbarContent.socialLinks.map(({ label, icon: Icon, url }) => (
               <li key={label}>
                 <NavLink
+                  title={label}
                   aria-label={`navigates to ${label} (opens new tab)`}
                   url={url}
                   openInNewTab
