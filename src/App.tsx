@@ -16,7 +16,7 @@ export default function App() {
               media="(min-width: 768px)"
             />
             <img
-              className="absolute left-0 top-0 z-10 h-full w-full object-cover object-center"
+              className="absolute left-0 top-0 z-10 h-full w-full object-cover object-center sm:static"
               src="https://placekitten.com/g/1280/350"
               alt="A cute kitten"
               loading="lazy"
@@ -25,7 +25,7 @@ export default function App() {
         </header>
         <section className="container mx-auto px-4 py-8 md:px-0">
           <h1 className="text-3xl font-bold md:text-4xl">
-            Quantum Catputing Anyone?
+            This webpage is accessible!
           </h1>
           <p className="mt-4 text-lg">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe,

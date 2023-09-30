@@ -29,7 +29,7 @@ describe('<Nav />', () => {
   describe('Home link', () => {
     it('renders correctly', () => {
       const navElement = screen.getByRole('navigation');
-      const linkElement = screen.getByTitle('Home');
+      const linkElement = screen.getByTestId('home-link');
       const logoElement = screen.getByTestId(TEST_IDS.PENNYLANE_WORDMARK_LOGO);
 
       expect(linkElement).toBeInTheDocument();

@@ -21,18 +21,18 @@ export const navbarContent = {
   ],
   socialLinks: [
     {
-      label: 'Github | alan-emartin',
-      url: 'https://github.com/alan-emartin',
+      label: 'Github',
+      url: 'https://github.com/PennyLaneAI/pennylane',
       icon: FaGithub,
     },
     {
-      label: 'Linkedin | Alan Martin - Software Engineer',
-      url: 'https://www.linkedin.com/in/alan-martin-2426b461/',
+      label: 'Linkedin',
+      url: 'https://www.linkedin.com/company/pennylaneai/',
       icon: FaLinkedin,
     },
     {
-      label: 'Twitter | @alanMartinCodes',
-      url: 'https://twitter.com/alanMartinCodes',
+      label: 'Twitter',
+      url: 'https://twitter.com/PennyLaneAI',
       icon: FaTwitter,
     },
   ],

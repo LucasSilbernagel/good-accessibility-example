@@ -1,53 +1,50 @@
-<img src="./src/assets/pennylane-logo.svg" alt="Pennylane">
+# Good Accessibility Example
 
-# Xanadu & Pennylane Tech Challenge
+## Description:
 
-### Description:
+A simple webpage that follows web accessibility best practices.
 
-We’re building a new app, and we need you to develop the navbar feature! Create a simple
-React app using the framework of your choice (Vite, Create React App, Gatsby, Next.js, etc).
-The app doesn’t need any content other than the navigation, but the page should be long
-enough to scroll. You can add some lorem ipsum text as a placeholder. Only one page is
-necessary, the navigation links don’t need to go anywhere.
+## Live Link
 
-As long as the below requirements are met, the design is up to you! Your design skills are not
-being evaluated.
 
-Once completed, please send us a link to the GitHub repository for the project, along with a live
-link. You can deploy the project wherever you like: GitHub Pages, Netlify, Vercel, AWS, etc.
 
-### Acceptance Criteria:
+## Tech Stack:
 
-- The navbar is built with React (bonus points for using TypeScript as well)
-- We use Tailwind CSS to style our projects, but you can use whichever styling system
-  you like.
-- The navbar includes a logo/image of your choosing.
-- The navbar includes 4 text links:
-  - Products
-  - About
-  - Blog
-  - Press
-- The navbar includes 3 social links. These should be icons only (Font Awesome,
-  Boxicons, etc).
-  - GitHub
-  - LinkedIn
-  - Twitter
-- The navbar should be responsive, usable on screens as small as 320px wide.
-- The navbar should be displayed at the top of the page, with no space between the
-  navbar and the top or sides of the screen.
-- When scrolling down on the page, the navbar should be hidden above the fold. When
-  scrolling up, the navbar should slide down and be sticky at the top of the screen.
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind](https://tailwindcss.com/)
+- [react-icons](https://www.npmjs.com/package/react-icons)
 
-## My Submission:
+## Run Locally
 
-### Live Preview:
+### Prerequisites
 
-- [Live Preview](https://xanadu-pennylane-alan-martin.netlify.app/)
+In order to run this application locally, you must have node installed on your computer. To check if you already have it installed, enter `node -v` in your terminal. If you do not have node, you can install it here: https://nodejs.org/en/
 
-### Tech Stack:
+### Clone the repository
 
-- TypeScript
-- React/Vite
-- TailwindCSS
-- EsLint
-- Prettier
+Once you have confirmed that node is installed, `cd` into a folder on your computer and run the following command to clone the repository:
+
+`git clone https://github.com/LucasSilbernagel/good-accessibility-example.git`
+
+Then `cd` into the project folder and open it in your code editor. For Visual Studio Code:
+
+`cd good-accessibility-example`
+`code .`
+
+### Install dependencies
+
+To install all of the required dependencies, run `npm install`.
+
+### Start up the app
+
+- To start up the app locally, run `npm run dev` in your terminal. Your terminal should indicate a local URL at which you can view the app in your browser.
+
+## Testing
+
+### Unit Tests
+
+Unit tests are written with [Jest](https://jestjs.io/) and [react-testing-library](https://testing-library.com/).
+
+Use `npm test` to run all unit tests, or use `npm test SomeFileToRun` to run a specific test file.
