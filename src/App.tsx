@@ -8,25 +8,37 @@ export default function App() {
         <header className="relative flex h-[350px] w-full items-center justify-center border-b border-gray-300">
           <picture>
             <source
-              srcSet="https://placekitten.com/g/640/350"
-              media="(min-width: 640px)"
+              srcSet="https://picsum.photos/id/58/320/350"
+              media="(min-width: 320px)"
             />
             <source
-              srcSet="https://placekitten.com/g/768/350"
+              srcSet="https://picsum.photos/id/58/768/350"
               media="(min-width: 768px)"
             />
             <img
               className="absolute left-0 top-0 z-10 h-full w-full object-cover object-center sm:static"
-              src="https://placekitten.com/g/1280/350"
-              alt="A cute kitten"
+              src="https://picsum.photos/id/58/1280/350"
               loading="lazy"
+              alt="Black and white photo of a small lighthouse on a rocky outcrop"
             />
           </picture>
         </header>
         <section className="container mx-auto px-4 py-8 md:px-0">
-          <h1 className="text-3xl font-bold md:text-4xl">
+          <h1 className="mb-4 text-3xl font-bold md:text-4xl">
             This webpage is accessible!
           </h1>
+          <h2 className="text-2xl font-bold text-gray-500 md:text-3xl">
+            This is the same project as{' '}
+            <a
+              href="https://github.com/LucasSilbernagel/bad-accessibility-example"
+              target="_blank"
+              rel="noreferrer"
+              className="underline underline-offset-2 transition-all hover:underline-offset-4"
+            >
+              https://github.com/LucasSilbernagel/bad-accessibility-example
+            </a>
+            , but with the accessibility issues fixed.
+          </h2>
           <p className="mt-4 text-lg">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe,
             nihil. Assumenda excepturi neque, nihil sed cum aperiam nesciunt

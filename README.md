@@ -2,7 +2,7 @@
 
 ## Description:
 
-A simple webpage that follows web accessibility best practices.
+A simple webpage that follows web accessibility best practices. This is the same project as https://github.com/LucasSilbernagel/bad-accessibility-example but with the accessibility issues fixed.
 
 ## Live Link
 
