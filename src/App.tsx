@@ -33,7 +33,7 @@ export default function App() {
               href="https://github.com/LucasSilbernagel/bad-accessibility-example"
               target="_blank"
               rel="noreferrer"
-              className="underline underline-offset-2 transition-all hover:underline-offset-4"
+              className="break-words underline underline-offset-2 transition-all hover:underline-offset-4"
             >
               https://github.com/LucasSilbernagel/bad-accessibility-example
             </a>
