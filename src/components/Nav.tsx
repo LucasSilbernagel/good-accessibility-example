@@ -48,7 +48,7 @@ export default function Nav() {
       )}`}
       ref={navRef}
       aria-modal={menuOpen ? true : undefined}
-      role={menuOpen ? 'dialog' : undefined}
+      role={menuOpen ? 'dialog' : 'navigation'}
       aria-label={menuOpen ? 'navigation' : ''}
     >
       <FocusTrap active={menuOpen}>
