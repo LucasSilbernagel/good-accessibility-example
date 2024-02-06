@@ -47,6 +47,9 @@ export default function Nav() {
         isNavCollapsed,
       )}`}
       ref={navRef}
+      aria-modal={menuOpen ? true : undefined}
+      role={menuOpen ? 'dialog' : undefined}
+      aria-label={menuOpen ? 'navigation' : ''}
     >
       <FocusTrap active={menuOpen}>
         <div className="container mx-auto flex h-full w-full flex-col justify-between md:flex-row md:items-center">
